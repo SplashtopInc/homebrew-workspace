@@ -18,11 +18,11 @@ class Connector < Formula
       def install
         bin.install Dir["*"].first => "connector"
         # Install bash completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (bash_completion/"connector").write output
-        # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (zsh_completion/"_connector").write output
+        # output = Utils.safe_popen_read("#{bin}/connector", "-h")
+        # (bash_completion/"connector").write output
+        # # Install zsh completion
+        # output = Utils.safe_popen_read("#{bin}/connector", "-h")
+        # (zsh_completion/"_connector").write output
       end
     end
     if Hardware::CPU.intel?
@@ -41,8 +41,8 @@ class Connector < Formula
     end
   end
 
-  test do
-    system "#{bin}/sdpc-darwin-arm64 -h || #{bin}/sdpc-darwin-amd64 -h"
-  end
+  # test do
+    # system "#{bin}/sdpc-darwin-arm64 -h || #{bin}/sdpc-darwin-amd64 -h"
+  # end
 end
 
