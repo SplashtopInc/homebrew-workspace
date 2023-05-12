@@ -16,7 +16,7 @@ class Connector < Formula
       sha256 "2a7f647b649856d4779f0839f1ce902859ea5ac2c395bf88efa157ce2adc26bd"
 
       def install
-        mv "connector-arm64-stage-0.0.3.035" "connector"
+        mv "connector-arm64-stage-0.0.3.035", "connector"
         bin.install "connector"
         # Install bash completion
         output = Utils.safe_popen_read("#{bin}/connector", "-h")
