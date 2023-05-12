@@ -7,5 +7,6 @@ brew tap SplashtopInc/workspace
 then ,can install package
 example
 ```bash
+brew update
 brew install sdpc
 ```
