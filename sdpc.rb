@@ -16,13 +16,13 @@ class Sdpc < Formula
       sha256 "5766962dc58220c5dfab378828aa1719aa70ddcd0a5d609b5fd91d61761663b3"
 
       def install
-        bin.install "sdpc-darwin-arm64"
+        bin.install "sdpc-darwin-arm64" => "sdpc"
         # Install bash completion
-        output = Utils.safe_popen_read("#{bin}/sdpc-darwin-arm64", "-h")
-        (bash_completion/"sdpc-darwin-arm64").write output
+        output = Utils.safe_popen_read("#{bin}/sdpc", "-h")
+        (bash_completion/"sdpc").write output
         # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/sdpc-darwin-arm64", "-h")
-        (zsh_completion/"_sdpc-darwin-arm64").write output
+        output = Utils.safe_popen_read("#{bin}/sdpc", "-h")
+        (zsh_completion/"_sdpc").write output
       end
     end
     if Hardware::CPU.intel?

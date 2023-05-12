@@ -26,17 +26,17 @@ class Connector < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/sdpc/stage/darwin/amd64/sdpc-darwin-amd64-0.1.39-stage-0.0.3.34.zip"
+      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/connector/stage/amd64/connector-amd64-stage-0.0.3.035"
       sha256 "bc79edb45d26ef243bd263169c78b7a81894d4e3ba95de3cc93eca40941e1ff5"
 
       def install
-        bin.install "sdpc-darwin-amd64"
+        bin.install Dir["*"].first => "connector"
         # Install bash completion
-        output = Utils.safe_popen_read("#{bin}/sdpc-darwin-amd64", "-h")
-        (bash_completion/"sdpc-darwin-amd64").write output
-        # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/sdpc-darwin-amd64", "-h")
-        (zsh_completion/"_sdpc-darwin-amd64").write output
+        # output = Utils.safe_popen_read("#{bin}/sdpc-darwin-amd64", "-h")
+        # (bash_completion/"sdpc-darwin-amd64").write output
+        # # Install zsh completion
+        # output = Utils.safe_popen_read("#{bin}/sdpc-darwin-amd64", "-h")
+        # (zsh_completion/"_sdpc-darwin-amd64").write output
       end
     end
   end
