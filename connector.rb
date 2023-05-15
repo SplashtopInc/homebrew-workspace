@@ -21,7 +21,7 @@ class Connector < Formula
         output = Utils.safe_popen_read("#{bin}/connector","-h")
         (bash_completion/"connector").write output
         # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
+        output = Utils.safe_popen_read("#{bin}/connector","-h")
         (zsh_completion/"_connector").write output
       end
     end
