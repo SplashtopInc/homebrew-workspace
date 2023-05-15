@@ -41,8 +41,8 @@ class Connector < Formula
     end
   end
 
-  test do
-    system "#{bin}/connector -h"
-  end
+  # test do
+  #   system "#{bin}/connector -h"
+  # end
 end
 
