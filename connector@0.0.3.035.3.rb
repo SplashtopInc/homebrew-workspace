@@ -17,12 +17,6 @@ class Connector0030353 < Formula
 
       def install
         bin.install Dir["*"].first => "connector"
-        # Install bash completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (bash_completion/"connector").write output
-        # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (zsh_completion/"_connector").write output
       end
     end
     if Hardware::CPU.intel?
@@ -31,12 +25,6 @@ class Connector0030353 < Formula
 
       def install
         bin.install Dir["*"].first => "connector"
-        # Install bash completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (bash_completion/"connector").write output
-        # Install zsh completion
-        output = Utils.safe_popen_read("#{bin}/connector", "-h")
-        (zsh_completion/"_connector").write output
       end
     end
   end
