@@ -12,7 +12,7 @@ class Connector < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url ""
+      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/connector/stage/darwin/arm64/connector-arm64-0.1.64-ztw-stage-0.0.5.001"
       sha256 "0ff88934e6f64df4ca64f8fa303acb917812b8ea181aaf32a64d7455fccadd01"
 
       def install
@@ -20,7 +20,7 @@ class Connector < Formula
       end
     end
     if Hardware::CPU.intel?
-      url ""
+      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/connector/stage/darwin/amd64/connector-amd64-0.1.64-ztw-stage-0.0.5.001"
       sha256 "f5198f08d945e62631b7f6e876ad65d67ef0d12d3b4324c36861bf665c29dfde"
 
       def install
