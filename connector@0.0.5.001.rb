@@ -12,16 +12,16 @@ class Connector005001 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/connector/stage/darwin/arm64/connector-arm64-stage-0.0.5.001"
-      sha256 "f2ccd547bb01c942a97794a3624a34f104c377064478c1737a7ccec86a9b16d6"
+      url ""
+      sha256 "0ff88934e6f64df4ca64f8fa303acb917812b8ea181aaf32a64d7455fccadd01"
 
       def install
         bin.install Dir["*"].first => "connector"
       end
     end
     if Hardware::CPU.intel?
-      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/connector/stage/darwin/amd64/connector-amd64-stage-0.0.5.001"
-      sha256 "25ff2d23f04b1b659b3ed2abe0cc12df8e6ba2cf4da56ec608f4f9aa68560721"
+      url ""
+      sha256 "f5198f08d945e62631b7f6e876ad65d67ef0d12d3b4324c36861bf665c29dfde"
 
       def install
         bin.install Dir["*"].first => "connector"

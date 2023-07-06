@@ -6,7 +6,7 @@
 class Connector < Formula
   desc "Manage content in multi platforms."
   homepage "https://github.com/SplashtopInc/homebrew-workspace"
-  version "ztw-stage-0.0.5.001"
+  version "0.0.5.001"
 
   depends_on "git"
 
