@@ -6,14 +6,14 @@
 class SdpcStage < Formula
   desc "Manage content in multi platforms."
   homepage "https://github.com/SplashtopInc/homebrew-workspace"
-  version "1.0.13-6"
+  version "0.1.39-stage-0.0.3.34"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/sdpc/prod/darwin/arm64/sdpc-darwin-arm64-1.0.13-6.zip"
-      sha256 "2591b8e0c8d5bb9e8a69351399b44fe4a477e46f45d92bd10ea3fc8f42b1b164"
+      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/sdpc/stage/darwin/arm64/sdpc-darwin-arm64-0.1.39-stage-0.0.3.34.zip"
+      sha256 "5766962dc58220c5dfab378828aa1719aa70ddcd0a5d609b5fd91d61761663b3"
 
       def install
         bin.install "sdpc-darwin-arm64" => "sdpc"
@@ -26,8 +26,8 @@ class SdpcStage < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/sdpc/prod/darwin/amd64/sdpc-darwin-amd64-1.0.13-6.zip"
-      sha256 "955da477e9b71a06ccd33e75e8d462a8302f6ddb79bcc688db970514b074bed2"
+      url "https://s3.us-west-2.amazonaws.com/splashlock-assets.splashshield.ai/sdpc/stage/darwin/amd64/sdpc-darwin-amd64-0.1.39-stage-0.0.3.34.zip"
+      sha256 "bc79edb45d26ef243bd263169c78b7a81894d4e3ba95de3cc93eca40941e1ff5"
 
       def install
         bin.install "sdpc-darwin-amd64" => "sdpc"
