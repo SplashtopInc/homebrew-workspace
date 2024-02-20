@@ -12,7 +12,7 @@ class Connector101314 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/connector/prod/linux/arm64/connector-arm64-1.0.13-14"
+      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/connector/prod/darwin/arm64/connector-arm64-1.0.13-14"
       sha256 "c9cf3ca34dc766c67883ad1fcf30b3a7179b6e01e80d0554cc102db747d2cb12"
 
       def install
@@ -20,7 +20,7 @@ class Connector101314 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/connector/prod/linux/amd64/connector-amd64-1.0.13-14"
+      url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/connector/prod/darwin/amd64/connector-amd64-1.0.13-14"
       sha256 "b6620eab5ff9db3b717b5361f53c27a2c7037472cf9bc7f57f52b0f8882e4ced"
 
       def install
