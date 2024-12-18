@@ -13,7 +13,7 @@ class Sdpc105883 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/sdpc/prod/darwin/arm64/sdpc-darwin-arm64-1.0.58-83.zip"
-      sha256 "83134fc9d9aeb26365da8ea221511796192edee496cc5951bfaaca634393b598"
+      sha256 "dc8332ca122c1ca96c2a6e7f975637cc769e5705f71aff78fe5e343987e0889b"
 
       def install
         bin.install "sdpc-darwin-arm64" => "sdpc"
@@ -27,7 +27,7 @@ class Sdpc105883 < Formula
     end
     if Hardware::CPU.intel?
       url "https://ssw-artifacts.s3.us-west-2.amazonaws.com/sdpc/prod/darwin/amd64/sdpc-darwin-amd64-1.0.58-83.zip"
-      sha256 "f2ad79955b628ca1ca5cad0afa61596a9371f7cff7cef557a247688af11dae5e"
+      sha256 "9574c7095cd926cbc9ffddc9ff15aa8b02b96d15e87fe018b710454a24ec6a22"
 
       def install
         bin.install "sdpc-darwin-amd64" => "sdpc"
