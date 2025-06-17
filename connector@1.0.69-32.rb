@@ -13,7 +13,7 @@ class Connector106932 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://download.ssw.splashtop.com/connector/prod/darwin/arm64/connector-arm64-1.0.69-32"
-      sha256 "89e8b12ced58524e1af274c724d9d0e35c740863eda73a6b061beee8c8d19d5d"
+      sha256 "853025496cf65c4a6a7be210c37326286ed7743c1ad3aec33ee76a8fbea3425d"
 
       def install
         bin.install Dir["*"].first => "connector"
@@ -21,7 +21,7 @@ class Connector106932 < Formula
     end
     if Hardware::CPU.intel?
       url "https://download.ssw.splashtop.com/connector/prod/darwin/amd64/connector-amd64-1.0.69-32"
-      sha256 "b3382525e636c67ac16a8c3774888064faedebb8bbbe0f419a324b613ebd7f45"
+      sha256 "58bfc7fb4c813a899ff09928c42d46ae3e5f18a73d4faaddda6673dfa906c890"
 
       def install
         bin.install Dir["*"].first => "connector"
