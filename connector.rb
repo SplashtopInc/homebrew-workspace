@@ -6,22 +6,22 @@
 class Connector < Formula
   desc "Manage content in multi platforms."
   homepage "https://github.com/SplashtopInc/homebrew-workspace"
-  version "1.0.92-25"
+  version "1.0.98-42"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://download.ssw.splashtop.com/connector/prod/darwin/arm64/connector-arm64-1.0.92-25"
-      sha256 "31fd9a7a28960d82eaef0d59080a926e2eefa5652705b34e1f3e5e79f09c7cf9"
+      url "https://download.ssw.splashtop.com/connector/prod/darwin/arm64/connector-arm64-1.0.98-42"
+      sha256 "56c6730c5f530c263fbb9f68a7428dacf4c064b177a2f57230b3e74ed74ae68b"
 
       def install
         bin.install Dir["*"].first => "connector"
       end
     end
     if Hardware::CPU.intel?
-      url "https://download.ssw.splashtop.com/connector/prod/darwin/amd64/connector-amd64-1.0.92-25"
-      sha256 "d8a06277b8b78ea583cd84cf85c450a2d8f6f6222823bcfb3e36d671464e8e31"
+      url "https://download.ssw.splashtop.com/connector/prod/darwin/amd64/connector-amd64-1.0.98-42"
+      sha256 "0ddb7d68a1e4743a04a050ca58dcee64405587293e843955be08c44e8c20ca39"
 
       def install
         bin.install Dir["*"].first => "connector"
