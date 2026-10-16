@@ -6,14 +6,14 @@
 class Sdpc < Formula
   desc "Manage content in multi platforms."
   homepage "https://github.com/SplashtopInc/homebrew-workspace"
-  version "1.0.92-4"
+  version "1.0.98-44"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://download.ssw.splashtop.com/sdpc/prod/darwin/arm64/sdpc-darwin-arm64-1.0.92-4.zip"
-      sha256 "28e41f1f1fd06ed8b61609d0eb5cd41b156ffef6f29dae020aa2f5cb364477a1"
+      url "https://download.ssw.splashtop.com/sdpc/prod/darwin/arm64/sdpc-darwin-arm64-1.0.98-44.zip"
+      sha256 "cadeed8d3980ed9095a41083491e7322cb03e8bf2f0e6bd891ead73e50ed6763"
 
       def install
         bin.install "sdpc-darwin-arm64" => "sdpc"
@@ -26,8 +26,8 @@ class Sdpc < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://download.ssw.splashtop.com/sdpc/prod/darwin/amd64/sdpc-darwin-amd64-1.0.92-4.zip"
-      sha256 "7c7e887765abd94b9fb7ae786b586912e9b50215b62800c225088173906d6377"
+      url "https://download.ssw.splashtop.com/sdpc/prod/darwin/amd64/sdpc-darwin-amd64-1.0.98-44.zip"
+      sha256 "a01bcef211af5da619eb0638e9a7acc030817a359bb20dc351649cf341d49aa6"
 
       def install
         bin.install "sdpc-darwin-amd64" => "sdpc"
