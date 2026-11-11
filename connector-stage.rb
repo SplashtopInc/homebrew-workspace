@@ -6,22 +6,22 @@
 class ConnectorStage < Formula
   desc "Manage content in multi platforms."
   homepage "https://github.com/SplashtopInc/homebrew-workspace"
-  version "1.0.100.001"
+  version "1.0.101.001"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://download.stage.ztw.splashtop.com/connector/stage/darwin/arm64/connector-arm64-1.0.27-230-ztw-stage-1.0.100.001"
-      sha256 "4f3d40f6ce1ce5321e1dae3990187d8f7a798031afe04ae2ef6f8b2d174ad906"
+      url "https://download.stage.ztw.splashtop.com/connector/stage/darwin/arm64/connector-arm64-1.0.27-232-ztw-stage-1.0.101.001"
+      sha256 "efde03ef0e96dea18aea4a046a3a4a32ad82033cdd28b8a46fe6a83071dc57f5"
 
       def install
         bin.install Dir["*"].first => "connector"
       end
     end
     if Hardware::CPU.intel?
-      url "https://download.stage.ztw.splashtop.com/connector/stage/darwin/amd64/connector-amd64-1.0.27-230-ztw-stage-1.0.100.001"
-      sha256 "fa403d72cd35745c6676b385c213fbaade745e8c3adae74b950f51efb75933f3"
+      url "https://download.stage.ztw.splashtop.com/connector/stage/darwin/amd64/connector-amd64-1.0.27-232-ztw-stage-1.0.101.001"
+      sha256 "9bba05806bcd477221bda29949caf209a3d7ff75d12fa2bf525055bf38bb63ea"
 
       def install
         bin.install Dir["*"].first => "connector"
